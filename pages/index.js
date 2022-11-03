@@ -9,7 +9,11 @@ export default function Home() {
   return (
     <>
       <Container maxW={"container.xl"}>
-        <Grid gridTemplateColumns={"25% 50% 25%"} w={"100%"}>
+        <Grid
+            gridTemplateColumns={"25% 50% 25%"}
+            w={"100%"}
+            h={'100vh'}
+        >
           <Box padding={"1rem"}>
             <Sidebar />
           </Box>
@@ -17,11 +21,14 @@ export default function Home() {
               borderLeft={'1px solid'}
               borderRight={'1px solid'}
               borderColor={'gray.600'}
+              h={'100%'}
+              overflowY={'scroll'}
           >
             <Flex flexDirection={'column'}>
                 <Heading size={'md'}>Home</Heading>
                 <NewTweet />
             </Flex>
+            <Flex flexDirection={'column'} w={'100%'}>
               <Tweet
                   fullname={"Mehmet"}
                   username={"mehmet"}
@@ -36,6 +43,61 @@ export default function Home() {
                   tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
                   timestamp={'2022-11-03T14:20:56.633Z'}
               />
+              <Tweet
+                  fullname={"Mehmet"}
+                  username={"mehmet"}
+                  avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                  tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                  timestamp={'2022-11-03T14:20:56.633Z'}
+              />
+              <Tweet
+                  fullname={"Mehmet"}
+                  username={"mehmet"}
+                  avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                  tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                  timestamp={'2022-11-03T14:20:56.633Z'}
+              />
+              <Tweet
+                  fullname={"Mehmet"}
+                  username={"mehmet"}
+                  avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                  tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                  timestamp={'2022-11-03T14:20:56.633Z'}
+              />
+              <Tweet
+                  fullname={"Mehmet"}
+                  username={"mehmet"}
+                  avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                  tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                  timestamp={'2022-11-03T14:20:56.633Z'}
+              /><Tweet
+                fullname={"Mehmet"}
+                username={"mehmet"}
+                avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                timestamp={'2022-11-03T14:20:56.633Z'}
+            />
+              <Tweet
+                  fullname={"Mehmet"}
+                  username={"mehmet"}
+                  avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                  tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                  timestamp={'2022-11-03T14:20:56.633Z'}
+              /><Tweet
+                fullname={"Mehmet"}
+                username={"mehmet"}
+                avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                timestamp={'2022-11-03T14:20:56.633Z'}
+            />
+              <Tweet
+                  fullname={"Mehmet"}
+                  username={"mehmet"}
+                  avatar={"https://pbs.twimg.com/profile_images/1351781709704548352/8Q9ZQ9Zj_400x400.jpg"}
+                  tweetBody={'Join us for a live watch party of the #dotNETConf Keynote covering full stack development, APIs, multi-platform development, game development, and machine learning!'}
+                  timestamp={'2022-11-03T14:20:56.633Z'}
+              />
+            </Flex>
           </Box>
           <Box padding={"1rem"}></Box>
         </Grid>
