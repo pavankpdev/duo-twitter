@@ -12,7 +12,13 @@ const Tweet = ({fullname, username, avatar, tweetBody, timestamp, images}) => {
     dayjs.extend(relativeTime)
 
     return <>
-        <Grid gridTemplateColumns={'10% 90%'}>
+        <Grid
+            gridTemplateColumns={'10% 90%'}
+            borderBottom={'1px solid'}
+            borderColor={'gray.600'}
+            padding={'1rem 1.2rem'}
+            gap={'10px'}
+        >
             <Box>
                 <Avatar name={fullname} src={avatar} />
             </Box>
