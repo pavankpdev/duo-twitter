@@ -1,6 +1,9 @@
 import { Flex, Text } from "@chakra-ui/react";
 
-const SidebarItem = ({ Icon, text }) => {
+const SidebarItem = ({ Icon, text, clickHandler }) => {
+
+    const doNothing = () => {}
+
   return (
     <>
       <Flex
@@ -14,6 +17,7 @@ const SidebarItem = ({ Icon, text }) => {
         _hover={{
           backgroundColor: "gray.800",
         }}
+        onClick={clickHandler || doNothing}
       >
         <Icon />
         <Text>{text}</Text>
